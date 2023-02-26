@@ -33,7 +33,8 @@ Mosayc creates tile-based mosaics of pictures.
 Features
 --------
 
-* TODO
+* Command-line interface
+* Can add a random tilt to pictures to give a *manual* feeling.
 
 -------
 Credits
