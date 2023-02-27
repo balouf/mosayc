@@ -106,6 +106,5 @@ ENV/
 
 # PyCharm project settings
 .idea
-/.run/
 /mosayc/config/config.json
 /pictures/
