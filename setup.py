@@ -10,11 +10,11 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=7.0',]
+requirements = ['Click>=7.0', 'Pillow', 'numpy', 'joblib']
 
-setup_requirements = ['pytest-runner',]
+setup_requirements = ['pytest-runner', ]
 
-test_requirements = ['pytest>=3',]
+test_requirements = ['pytest>=3', ]
 
 setup(
     author="Fabien Mathieu",
@@ -26,9 +26,11 @@ setup(
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
     ],
     description="Mosayc creates tile-based mosaics of pictures.",
     entry_points={

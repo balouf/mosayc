@@ -7,6 +7,8 @@ tox
 coverage
 Sphinx
 sphinx_rtd_theme
+nbsphinx
+IPython
 twine
 Click
 pytest

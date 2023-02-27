@@ -28,12 +28,19 @@ Mosayc creates tile-based mosaics of pictures.
 * Free software: GNU General Public License v3
 * Documentation: https://balouf.github.io/mosayc/.
 
+This software is inspired by the script proposed here:
+https://towardsdatascience.com/how-to-create-a-photo-mosaic-in-python-45c94f6e8308
 
 --------
 Features
 --------
 
 * Command-line interface
+* Tile assignement is powered by matching theory, avoiding to re-use always the same tiles.
+* Tile colors can be shifted to be more consistent with the target *pixel*.
+* Multi-processing.
+* Automatic computation of the median aspect ratio.
+* Original aspect ratios of tiles can be preserved.
 * Can add a random tilt to pictures to give a *manual* feeling.
 
 -------

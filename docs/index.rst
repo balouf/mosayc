@@ -8,6 +8,7 @@ Welcome to Mosayc's documentation!
    readme
    installation
    usage
+   notebooks/index
    reference/index
    contributing
    authors
