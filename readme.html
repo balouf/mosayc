@@ -15,6 +15,7 @@
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -53,6 +54,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/index.html">Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reference/index.html">Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
@@ -83,7 +85,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="mosayc">
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="mosayc">
 <h1>Mosayc<a class="headerlink" href="#mosayc" title="Permalink to this heading"></a></h1>
 <a class="reference external image-reference" href="https://pypi.python.org/pypi/mosayc"><img alt="PyPI Status" src="https://img.shields.io/pypi/v/mosayc.svg" /></a>
 <a class="reference external image-reference" href="https://github.com/balouf/mosayc/actions?query=workflow%3Abuild"><img alt="Build Status" src="https://github.com/balouf/mosayc/workflows/build/badge.svg?branch=main" /></a>
@@ -94,10 +120,17 @@
 <li><p>Free software: GNU General Public License v3</p></li>
 <li><p>Documentation: <a class="reference external" href="https://balouf.github.io/mosayc/">https://balouf.github.io/mosayc/</a>.</p></li>
 </ul>
+<p>This software is inspired by the script proposed here:
+<a class="reference external" href="https://towardsdatascience.com/how-to-create-a-photo-mosaic-in-python-45c94f6e8308">https://towardsdatascience.com/how-to-create-a-photo-mosaic-in-python-45c94f6e8308</a></p>
 <section id="features">
 <h2>Features<a class="headerlink" href="#features" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>Command-line interface</p></li>
+<li><p>Tile assignement is powered by matching theory, avoiding to re-use always the same tiles.</p></li>
+<li><p>Tile colors can be shifted to be more consistent with the target <em>pixel</em>.</p></li>
+<li><p>Multi-processing.</p></li>
+<li><p>Automatic computation of the median aspect ratio.</p></li>
+<li><p>Original aspect ratios of tiles can be preserved.</p></li>
 <li><p>Can add a random tilt to pictures to give a <em>manual</em> feeling.</p></li>
 </ul>
 </section>
