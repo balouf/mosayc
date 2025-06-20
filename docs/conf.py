@@ -122,7 +122,7 @@ html_theme = "pydata_sphinx_theme"
 # documentation.
 #
 # html_theme_options = {}
-html_favicon = 'favico.ico'
+html_favicon = "favico.ico"
 html_theme_options = {
     "icon_links": [
         {

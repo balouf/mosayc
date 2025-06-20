@@ -28,7 +28,9 @@ def test_content(response):
 def test_command_line_interface():
     """Test the CLI."""
     runner = CliRunner()
-    result = runner.invoke(cli.main, ['-R', os.path.join(os.getcwd(), 'example'), '-Q', 1, '-S', 1])
+    result = runner.invoke(
+        cli.main, ["-R", os.path.join(os.getcwd(), "example"), "-Q", 1, "-S", 1]
+    )
     assert result.exit_code == 0
     assert "Mosaic saved" in result.output
     help_result = runner.invoke(cli.main, ["--help"])

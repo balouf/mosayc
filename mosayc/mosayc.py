@@ -27,6 +27,7 @@ class ImageInfo:
     ...
     ValueError: File not_a_file_that_exists.jpeg does not exists.
     """
+
     def __init__(self, path):
         self.path = Path(path)
         if not self.path.exists():
@@ -43,7 +44,7 @@ class ImageInfo:
         """
         The PIL Image object.
         """
-        return ImageOps.exif_transpose(Image.open(self.path)).convert('RGB')
+        return ImageOps.exif_transpose(Image.open(self.path)).convert("RGB")
 
     def __repr__(self):
         return f"img({self.path}, size={self.width}x{self.height} ({self.ratio[0]}/{self.ratio[1]}), color={self.color})"
@@ -76,7 +77,7 @@ class Mosayc:
     Command line usage:
 
     >>> import subprocess
-    >>> result = subprocess.run("uv run mosayc --help", capture_output=True, text=True)
+    >>> result = subprocess.run(["mosayc", "--help"], capture_output=True, text=True)
     >>> print(result.stdout)  # doctest: +SKIP
     Usage: mosayc [OPTIONS]
     <BLANKLINE>

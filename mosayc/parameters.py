@@ -20,6 +20,7 @@ class Parameters(BaseModel):
     """
     Dataclass representing parameters for a mosaic.
     """
+
     input: str
     output: str
     tiles_dir: str
