@@ -76,7 +76,7 @@ class Mosayc:
     Command line usage:
 
     >>> import subprocess
-    >>> result = subprocess.run("mosayc --help", capture_output=True, text=True)
+    >>> result = subprocess.run("uv run mosayc --help", capture_output=True, text=True)
     >>> print(result.stdout)  # doctest: +SKIP
     Usage: mosayc [OPTIONS]
     <BLANKLINE>
