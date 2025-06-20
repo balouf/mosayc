@@ -19,8 +19,8 @@ class ImageInfo:
     --------
 
     >>> img = ImageInfo('example/main.jpeg')
-    >>> img
-    img(example\\main.jpeg, size=1024x1024 (1/1), color=[75.18568993 59.76046181 26.39377594])
+    >>> img  # doctest: +ELLIPSIS
+    img(...main.jpeg, size=1024x1024 (1/1), color=[75.18568993 59.76046181 26.39377594])
 
     >>> ImageInfo('not_a_file_that_exists.jpeg')
     Traceback (most recent call last):
