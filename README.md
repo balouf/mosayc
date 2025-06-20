@@ -27,7 +27,7 @@ The gift was appreciated! And a few years later, I decided to release the code I
 
 ## Features
 
-There are already many tutorials to build a mosaic from a bunch of tile pictures, e.g. https://medium.com/@aarongrove/creating-image-mosaics-with-python-8e4c25dd9bf9 or https://pytutorial.com/python-image-mosaics-guide/ (this is far from being exhaustive).
+There are already many tutorials to build a mosaic from a bunch of tile pictures, e.g. [here](https://medium.com/@aarongrove/creating-image-mosaics-with-python-8e4c25dd9bf9) or [there](https://pytutorial.com/python-image-mosaics-guide/) (this is far from being exhaustive).
 
 So... what makes Mosayc different? Mostly its use case: make a personalized *memory-lane* that you can offer as a gift (print as a poster, a jigsaw puzzle, use as screensaver of background...).
 
