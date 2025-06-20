@@ -31,7 +31,7 @@ There are already many tutorials to build a mosaic from a bunch of tile pictures
 
 So... what makes Mosayc different? Mostly its use case: make a personalized *memory-lane* that you can offer as a gift (print as a poster, a jigsaw puzzle, use as screensaver of background...).
 
-- All proposals I found so far are based on finding the closest tile for each mixel (mosaic pixel). As a result, most of the time, you just use a small subset of your tiles (the ones with the good colors) that you copy many times. And you still have no guarantee that the colors will be right in the hand. In contrast:
+- All proposals I found so far are based on finding the closest tile for each mixel (mosaic pixel). As a result, most of the time, you just use a small subset of your tiles (the ones with the good colors) that you copy many times. And you still have no guarantee that the colors will be right in the end. In contrast:
   - Mosayc leverages [$b$-matching theory](https://learn2allocate.github.io/05_offline.pdf), a technique that ensures that all your tiles will occupy roughly the same number of mixels (and you control the redundancy): all your pictures will be included!
   - Mosayc can adjust the color of your tiles so they correspond to what you want (and you control the adjustment).
   - Mosayc can have tiles of different aspect ratios and orientations.
