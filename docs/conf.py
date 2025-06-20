@@ -42,6 +42,7 @@ extensions = [
     "sphinx.ext.imgconverter",
     "myst_parser",
     "sphinx_copybutton",
+    "sphinx.ext.githubpages",
 ]
 
 # Smart code copy
